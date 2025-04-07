@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -55,7 +54,6 @@ export default function AgendaForm() {
             <Label>사업내용</Label>
             <Textarea placeholder="사업의 상세 내용을 입력하세요" />
           </div>
-
           <div className="grid gap-4">
             <Label>견적업체</Label>
             {vendors.map((vendor, index) => (
@@ -78,7 +76,6 @@ export default function AgendaForm() {
             ))}
             <Button variant="outline" onClick={addVendor}>+ 업체 추가</Button>
           </div>
-
           <div>
             <Label>업체선정방법</Label>
             <Select onValueChange={(value) => setSelectionMethod(value)}>
@@ -96,7 +93,6 @@ export default function AgendaForm() {
               </div>
             )}
           </div>
-
           <div className="grid grid-cols-2 gap-4">
             <div>
               <Label>선정업체명</Label>
@@ -107,7 +103,6 @@ export default function AgendaForm() {
               <Input placeholder="예: 9,900,000원" />
             </div>
           </div>
-
           <div>
             <Label>계정과목</Label>
             <Input placeholder="예: 홍보비(커뮤니케이션팀)" />
